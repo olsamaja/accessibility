@@ -30,10 +30,6 @@ public extension UIColor {
     }
 }
 
-class UIAdaptativeColor: UIColor {
-    
-}
-
 extension UIColor {
 
     func styleColors() -> [InterfaceStyle: UIColor] {
