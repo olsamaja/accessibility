@@ -8,14 +8,27 @@
 import SwiftUI
 
 struct ContentView: View {
+
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            List {
+                ForEach(Constants.sections) { section in
+                    SectionRows(sectionModel: section)
+                }
+            }
+            .navigationTitle("Accessibility")
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Group {
+            ContentView()
+                .previewDisplayName("Light Theme")
+            ContentView()
+                .previewDisplayName("Dark Theme")
+                .preferredColorScheme(.dark)
+        }
     }
 }
