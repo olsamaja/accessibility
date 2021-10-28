@@ -16,7 +16,7 @@ struct ContentView: View {
                     SectionRows(sectionModel: section)
                 }
             }
-            .navigationTitle("Accessibility")
+            .navigationTitle("Transactions")
         }
     }
 }

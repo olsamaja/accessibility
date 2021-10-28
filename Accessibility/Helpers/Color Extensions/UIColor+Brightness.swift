@@ -10,8 +10,8 @@ import UIKit
 extension UIColor {
     
     enum Constants {
-        static let defaultBrightnessAdjustment: CGFloat = 0.3
-        static let highContrastBrightnessAdjustment: CGFloat = 0.2
+        static let defaultBrightnessAdjustment: CGFloat = 0.2
+        static let highContrastBrightnessAdjustment: CGFloat = 0.3
     }
     
     func lighter(by value: CGFloat = Constants.defaultBrightnessAdjustment) -> UIColor {
