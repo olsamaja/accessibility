@@ -7,7 +7,6 @@
 
 import UIKit
 
-
 extension UIColor {
     
     var dynamic: UIColor {
