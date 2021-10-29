@@ -14,17 +14,17 @@ extension UIColor {
         static let highContrastBrightnessAdjustment: CGFloat = 0.3
     }
     
-    func lighter(by value: CGFloat = Constants.defaultBrightnessAdjustment) -> UIColor {
+    func brighter(by value: CGFloat = Constants.defaultBrightnessAdjustment) -> UIColor {
         let clamped = value.clamped(from: 0, to: 1)
-        return adjustBrightness(by: clamped)
+        return withAdjustedBrightness(by: clamped)
     }
     
     func darker(by value: CGFloat = Constants.defaultBrightnessAdjustment) -> UIColor {
         let clamped = value.clamped(from: 0, to: 1)
-        return adjustBrightness(by: -clamped)
+        return withAdjustedBrightness(by: -clamped)
     }
 
-    private func adjustBrightness(by value: CGFloat) -> UIColor {
+    private func withAdjustedBrightness(by value: CGFloat) -> UIColor {
         var hsva: (hue: CGFloat, saturation: CGFloat, brightness: CGFloat, alpha: CGFloat) = (0.0, 0.0, 0.0, 0.0)
         guard getHue(&hsva.hue, saturation: &hsva.saturation, brightness: &hsva.brightness, alpha: &hsva.alpha) else {
             return UIColor.red

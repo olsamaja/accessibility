@@ -12,9 +12,9 @@ extension UIColor {
     
     var dynamic: UIColor {
         
-        let dark = self.lighter()
+        let dark = self.brighter()
         let highContrast = self.darker()
-        let darkHighContrast = self.lighter(by: UIColor.Constants.highContrastBrightnessAdjustment)
+        let darkHighContrast = self.brighter(by: UIColor.Constants.highContrastBrightnessAdjustment)
         
         return dynamicColors(light: self, highContrast: highContrast, dark: dark, darkHighContrast: darkHighContrast)
     }
@@ -22,7 +22,7 @@ extension UIColor {
     var dynamicBackground: UIColor {
         
         let dark = self.darker()
-        let highContrast = self.lighter()
+        let highContrast = self.brighter()
         let darkHighContrast = self.darker(by: UIColor.Constants.highContrastBrightnessAdjustment)
         
         return dynamicColors(light: self, highContrast: highContrast, dark: dark, darkHighContrast: darkHighContrast)
