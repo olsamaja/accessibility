@@ -22,7 +22,7 @@ struct Row: View {
     static private func makeRowView(with rowModel: RowModel) -> some View {
         switch rowModel.type.self {
         case is TransactionsSectionView.Type:
-            return AnyView( TransactionsSectionView(title: "20th May, 2021") )
+            return AnyView( TransactionsSectionView(model: TransactionsSectionViewModel(title: "20th May, 2021", colors: ColorPack.sectionHeader)) )
         case is ActionView.Type:
             return AnyView( ActionView(title: "Show More") )
         case is TransactionView.Type:

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D50E4F47273BC866001E1292 /* ColorPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50E4F46273BC866001E1292 /* ColorPack.swift */; };
 		D57665E627284BB1001C124D /* AccessibilityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57665E527284BB1001C124D /* AccessibilityApp.swift */; };
 		D57665E827284BB1001C124D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57665E727284BB1001C124D /* ContentView.swift */; };
 		D57665EA27284BB3001C124D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D57665E927284BB3001C124D /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 		D5766630272858A7001C124D /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = D576662F272858A7001C124D /* UIColor+Hex.swift */; };
 		D576663227285B90001C124D /* ContentView+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = D576663127285B90001C124D /* ContentView+Data.swift */; };
 		D5766634272A9D64001C124D /* UIColor+Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5766633272A9D64001C124D /* UIColor+Dynamic.swift */; };
+		D5F06F77273441AF007777B9 /* TransactionsSectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F06F76273441AF007777B9 /* TransactionsSectionViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D50E4F46273BC866001E1292 /* ColorPack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPack.swift; sourceTree = "<group>"; };
 		D57665E227284BB1001C124D /* Accessibility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Accessibility.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D57665E527284BB1001C124D /* AccessibilityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityApp.swift; sourceTree = "<group>"; };
 		D57665E727284BB1001C124D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -77,6 +80,7 @@
 		D576662F272858A7001C124D /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		D576663127285B90001C124D /* ContentView+Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView+Data.swift"; sourceTree = "<group>"; };
 		D5766633272A9D64001C124D /* UIColor+Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Dynamic.swift"; sourceTree = "<group>"; };
+		D5F06F76273441AF007777B9 /* TransactionsSectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsSectionViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				D576661427284C9D001C124D /* TransactionsSectionView.swift */,
+				D5F06F76273441AF007777B9 /* TransactionsSectionViewModel.swift */,
 				D576661227284C90001C124D /* TransactionView.swift */,
 				D576661C27284DFF001C124D /* TransactionViewModel.swift */,
 			);
@@ -218,6 +223,7 @@
 		D5766635272AA054001C124D /* Color Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				D50E4F46273BC866001E1292 /* ColorPack.swift */,
 				D576662B2728587E001C124D /* Color+Extensions.swift */,
 				D576662F272858A7001C124D /* UIColor+Hex.swift */,
 				D5766633272A9D64001C124D /* UIColor+Dynamic.swift */,
@@ -362,12 +368,14 @@
 				D576662427284F50001C124D /* RowModel.swift in Sources */,
 				D57665E827284BB1001C124D /* ContentView.swift in Sources */,
 				D576661727284D08001C124D /* BuilderProtocol.swift in Sources */,
+				D5F06F77273441AF007777B9 /* TransactionsSectionViewModel.swift in Sources */,
 				D576662A27285855001C124D /* Comparable+Extensions.swift in Sources */,
 				D576662127284EED001C124D /* Row.swift in Sources */,
 				D576662627284FF1001C124D /* RowModel+Data.swift in Sources */,
 				D576661527284C9D001C124D /* TransactionsSectionView.swift in Sources */,
 				D5766630272858A7001C124D /* UIColor+Hex.swift in Sources */,
 				D576662E27285894001C124D /* UIColor+Brightness.swift in Sources */,
+				D50E4F47273BC866001E1292 /* ColorPack.swift in Sources */,
 				D57666282728539C001C124D /* SectionRows.swift in Sources */,
 				D57665E627284BB1001C124D /* AccessibilityApp.swift in Sources */,
 				D576662C2728587E001C124D /* Color+Extensions.swift in Sources */,

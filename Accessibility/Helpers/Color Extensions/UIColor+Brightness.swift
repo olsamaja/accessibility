@@ -11,7 +11,6 @@ extension UIColor {
     
     enum Constants {
         static let defaultBrightnessAdjustment: CGFloat = 0.2
-        static let highContrastBrightnessAdjustment: CGFloat = 0.3
     }
     
     func brighter(by value: CGFloat = Constants.defaultBrightnessAdjustment) -> UIColor {
