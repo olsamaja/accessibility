@@ -18,7 +18,7 @@ public extension Color {
 public extension UIColor {
     
     static var defaultBackround: UIColor { systemBackground }
-    static var sectionHeaderForeground: UIColor { black.dynamicColor(dark: white) }
+    static var sectionHeaderForeground: UIColor { black.dynamicColor(dark: UIColor(hex: "0x1e1e1e")) }
     static var sectionHeaderBackground: UIColor { UIColor(hex: "0xfb8c00").autoDynamicBackground }
     static var actionText: UIColor { UIColor(hex: "0x008cff").autoDynamic }
 }
